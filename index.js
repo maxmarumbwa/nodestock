@@ -17,6 +17,15 @@ app.get("/", function (req, res) {
   });
 });
 
+// Set about routes
+app.get("/about.html", function (req, res) {
+  res.render("about");
+});
+
+// Set contact routes
+app.get("/contact.html", function (req, res) {
+  res.render("contact");
+});
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 
